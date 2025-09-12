@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>NexusSmp Rank Store</title>
-  <meta name="description" content="A NexusSmp Rank Store start with vip! " />
+  <title>NexusStore — Ranks & Upgrades</title>
+  <meta name="description" content="A NexusSMP rank store start with vip for only 50 pesos" />
   <style>
     :root{
       --bg1:#061226; /* deep navy */
@@ -98,33 +98,36 @@
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#7dd3fc"/><stop offset="1" stop-color="#60a5fa"/></linearGradient></defs><rect x="3" y="3" width="18" height="18" rx="6" fill="url(#g)" opacity="0.96"/></svg>
       </div>
       <div>
-        <h1>Donut Plugins Store</h1>
-        <span>Cheap plugin start with 50/1$!</span>
+        <h1>Nexus Rank store</h1>
+        <span>this store was made by @777zent</span>
       </div>
     </div>
-    <nav>
-      <button class="btn btn-ghost" id="toggle-theme">Theme</button>
-      <button class="btn btn-primary" id="open-cart"> dc:fsociattacker_ (0)</button>
-    </nav>
+ <nav style="display: flex; gap: 10px; align-items: center;">
+  <a href="https://discord.gg/v35hpJfz" target="_blank" class="btn btn-primary" style="text-decoration: none;">Join Discord</a>
+  <button class="btn btn-ghost" id="toggle-theme">Theme</button>
+  <button class="btn btn-primary" id="open-cart">@777zent (0)</button>
+ </nav>
+
+
   </header>
 
   <main>
     <section class="hero-card hero">
       <div>
-        <h2>Choose your plugin!</h2>
-        <p>cheap plugins by AiZent/kian</p>
+        <h2>Choose your rank!</h2>
+        <p>WE PREFER TO BUY NEXUS RANK ITS THE BEST!!</p>
         <div style="margin-top:12px">
-          <span class="chip">cheap</span>
-          <span class="chip">server Support</span>
-          <span class="chip">Exclusive Tag</span>
+          <span class="chip">Instant Rank</span>
+          <span class="chip">Discord Role</span>
+          <span class="chip">Freebies keys</span>
+          <span class="chip">Kind Dev [777zent]</span>
         </div>
       </div>
       <div style="min-width:320px;text-align:right">
         <div style="display:inline-block;background:rgba(255,255,255,0.02);padding:12px;border-radius:12px">
           <div style="font-size:13px;color:var(--muted)">Featured</div>
-          <div style="font-weight:900;font-size:20px">DonutSpawners</div>
-          <div style="color:var(--muted);font-size:14px">have droploot button and configurae
-          </div>
+          <div style="font-weight:900;font-size:20px">NEXUS</div>
+          <div style="color:var(--muted);font-size:14px">/fly /anvil /enderchest /sellwand /freebieskeys</div>
         </div>
       </div>
     </section>
@@ -134,8 +137,8 @@
     </section>
 
     <section style="margin-top:18px;display:flex;gap:12px;align-items:center;justify-content:center">
-      <button class="btn btn-primary" id="demo-confetti">Discord</button>
-      <button class="btn btn-ghost" id="download-html">Download HTML</button>
+      <button class="btn btn-primary" id="demo-confetti">Celebrate</button>
+      <button class="btn btn-ghost" id="download-html">.</button>
     </section>
   </main>
 
@@ -171,18 +174,19 @@
   </div>
 
   <footer>
-    <small> 2025 this website was built by AiZent/fsociattacker👑</small>
+    <small>Built with ❤️ — tweak it however you like. Ranks: VIP (P50) • MVP (P100) • MVP+ (P200) • UNITED (P300) • UNITED++ (P400)</small>
   </footer>
 
   <script>
     // --- Rank data (you can edit these) ---
     const ranks = [
-      {id:'vip',name:'DonutTPA',price:50,tag:'P50',desc:'/tpauto /tpahere /tpa /tpaguitoggle',features:[] , glow:'vip',ribbon:''},
-      {id:'mvp',name:'DonutTools',price:100,tag:'P100',desc:'/drills,treechopper,amethyts bucket,sellaxe',features:[] ,glow:'mvp',ribbon:'HOT'},
-      {id:'mvpplus',name:'DonutWorth',price:200,tag:'P200',desc:'A value on a items $',features:['configurable'],glow:'mvp',ribbon:'BEST'},
-      {id:'united',name:'UNITED',price:300,tag:'P300',desc:'Elite rank with exclusive channel',features:['Exclusive Channel','Server Tag','Priority Support'],glow:'vip',ribbon:'ELITE'},
-      {id:'united++',name:'UNITED++',price:400,tag:'P400',desc:'Top-tier: everything + vanity',features:['Vanity Items','Custom Tag','Top Priority'],glow:'vip',ribbon:'ULTIMATE'}
-    ];
+  {id:'vip',name:'VIP',price:60,tag:'P60',desc:'Starter perks: chat color, small tag',features:['Chat Color','Starter Tag','/nick'],glow:'vip',ribbon:''},
+  {id:'mvp',name:'MVP',price:130,tag:'P130',desc:'Boosted access with more commands',features:['Extra Kits','/home','Priority Queue'],glow:'mvp',ribbon:'POPULAR'},
+  {id:'pro',name:'PRO',price:150,tag:'P150',desc:'For regular players seeking value',features:['Cosmetics','Daily Bonus','Custom Name'],glow:'mvp',ribbon:'VALUE'},
+  {id:'warfare',name:'WARFARE',price:200,tag:'P200',desc:'Specialized for combat & PvP perks',features:['Combat Boost','Armor Kits','Fast Respawn'],glow:'vip',ribbon:'PVP'},
+  {id:'nexus',name:'NEXUS',price:300,tag:'P300',desc:'Elite rank with advanced features',features:['Exclusive Channel','XP Multiplier','Server Tag'],glow:'vip',ribbon:'ELITE'},
+  {id:'nexus++',name:'NEXUS++',price:400,tag:'P400',desc:'Ultimate tier — total domination',features:['All Features','Top Priority','Vanity Exclusives'],glow:'vip',ribbon:'ULTIMATE'}
+ ];
 
     const grid = document.getElementById('rank-grid');
 
@@ -316,10 +320,10 @@
     document.getElementById('demo-confetti').addEventListener('click', launchConfetti);
 
     // download HTML (serializes document to single file)
-    document.getElementById('').addEventListener('click', ()=>{
+    document.getElementById('download-html').addEventListener('click', ()=>{
       const blob = new Blob([document.documentElement.outerHTML],{type:'text/html'});
       const url = URL.createObjectURL(blob);
-      const a = document.createElement('a'); a.href=url; a.download=''; a.click();
+      const a = document.createElement('a'); a.href=url; a.download='nebula-rank-store.html'; a.click();
       URL.revokeObjectURL(url);
     });
 
@@ -340,3 +344,4 @@
   </script>
 </body>
 </html>
+
